@@ -152,7 +152,7 @@ app.get("/server-script.js", (req, res) => {
         "itemListElement": collection.products ? collection.products.map(product => ({
           "@type": "Product",
           "name": product.title,
-          "abc":"abc",
+          "CollectionName":"MyCollection",
           "image": product.images ? product.images.map(image => image.src) : [],
           "url": \`https://\${shop}/products/\${product.handle}\`,
           "offers": {
