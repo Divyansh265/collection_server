@@ -4,7 +4,7 @@ const cors = require('cors');
 app.use(cors());
 const mongoose = require('mongoose');
 
-const DB = "mongodb+srv://divyanshSharma:divyanshSharma@cluster0.qdqmptw.mongodb.net/?retryWrites=true&w=majority";
+const DB = "mongodb+srv://divyanshSharma:divyanshSharma@cluster0.qdqmptw.mongodb.net/store?retryWrites=true&w=majority";
 mongoose.connect(DB)
     .then(() => {
         console.log("Connected to MongoDB");
