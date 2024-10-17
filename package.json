@@ -1,0 +1,24 @@
+{
+  "name": "new-folder",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Divyansh265/collection_server.git"
+  },
+  "author": "Divyansh Sharma",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Divyansh265/collection_server/issues"
+  },
+  "homepage": "https://github.com/Divyansh265/collection_server#readme",
+  "description": "",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.7.1"
+  }
+}
