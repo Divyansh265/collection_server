@@ -30,7 +30,8 @@ app.get('/serve-script/:shop', async (req, res) => {
     }
 
     const shopData = await Shop.findOne({ shop: shopName });
-
+    console.log('hello',shopData)
+    // res.send(shopData)
     if (!shopData) {
         return res.status(404).send('Shop not found');
     }
@@ -98,7 +99,7 @@ app.get("/server-script.js", (req, res) => {
 
     async function insertCollectionSchema() {
         try {
-            const tokenResponse = await fetch(\`https://server-page-xo9v.onrender.com/check-store?shop=\${shop}\`);
+            const tokenResponse = await fetch(\`https://collection-server-2w63.onrender.com/check-store?shop=\${shop}\`);
             if (!tokenResponse.ok) {
                 throw new Error('Failed to retrieve access token: ' + tokenResponse.statusText);
             }
