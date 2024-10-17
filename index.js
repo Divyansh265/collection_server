@@ -169,7 +169,7 @@ app.get("/server-script.js", (req, res) => {
       script.type = "application/ld+json";
       script.text = JSON.stringify(schemaData);
       document.head.appendChild(script);
-      console.log("JSON-LD schema inserted for collection:", collection.title);
+      console.log("JSON-LD schema inserted for collection2:", collection.title);
     }
 
     insertCollectionSchema();
