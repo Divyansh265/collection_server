@@ -150,6 +150,7 @@ app.get("/server-script.js", (req, res) => {
         "url": window.location.href,
         "image": collection.image ? collection.image.src : null,
         "customField": "This is a custom field for collection", // Custom field for Collection
+        "mycustomfield":"Hello world",
         "itemListElement": collection.products ? collection.products.map(product => ({
           "@type": "Product",
           "name": product.title,
@@ -176,6 +177,11 @@ app.get("/server-script.js", (req, res) => {
     insertCollectionSchema();
     `);
 });
+
+
+
+
+
 
 // Server start-up
 const port = process.env.PORT || 3000;
